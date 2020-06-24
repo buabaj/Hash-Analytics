@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0818.2120                               -->
+<workbook original-version='18.1' source-build='2019.2.3 (20192.19.0818.2120)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='data' inline='true' name='federated.0djn0oq11rdgb517lbosz1jiiyfu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data' name='textscan.0j4khg40xkrfoy1blaq1c0r5rosc'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/Home User/Desktop/Hash Analytics/assignments/assignment 3/data.csv' dataRefreshTime='' directory='C:/Users/Home User/Desktop/Hash Analytics/assignments/assignment 3' filename='C:/Users/HOMEUS~1/AppData/Local/Temp/TableauTemp/0at7jqf0zfbu6414o3cog0t25bqh/data.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0j4khg40xkrfoy1blaq1c0r5rosc' name='data.csv' table='[data#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:G1705:no:A1:G1705:1' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='country' ordinal='1' />
+            <column datatype='integer' name='year' ordinal='2' />
+            <column datatype='real' name='pop' ordinal='3' />
+            <column datatype='string' name='continent' ordinal='4' />
+            <column datatype='real' name='lifeExp' ordinal='5' />
+            <column datatype='real' name='gdpPercap' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pop]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>pop</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>continent</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[continent]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>continent</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RGB_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lifeExp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lifeExp]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>lifeExp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gdpPercap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdpPercap]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>gdpPercap</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G1705:no:A1:G1705:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>8520</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Continent' datatype='string' name='[continent]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Gdp Percap' datatype='real' name='[gdpPercap]' role='measure' type='quantitative' />
+      <column caption='Life Exp' datatype='real' name='[lifeExp]' role='measure' type='quantitative' />
+      <column caption='Pop' datatype='real' name='[pop]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.417166' measure-ordering='alphabetic' measure-percentage='0.582834' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+    </datasource>
+    <datasource caption='data (2)' inline='true' name='federated.0wjwjtj0lpv1r814lmr2x08c9pto' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data' name='textscan.0czf64s0mnt37212073w91t3pnmc'>
+            <connection class='textscan' directory='C:/Users/Home User/Desktop/Hash Analytics/assignments/assignment 3' filename='data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0czf64s0mnt37212073w91t3pnmc' name='data.csv' table='[data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='country' ordinal='1' />
+            <column datatype='integer' name='year' ordinal='2' />
+            <column datatype='real' name='pop' ordinal='3' />
+            <column datatype='string' name='continent' ordinal='4' />
+            <column datatype='real' name='lifeExp' ordinal='5' />
+            <column datatype='real' name='gdpPercap' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pop]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>pop</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[continent]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>continent</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lifeExp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lifeExp]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>lifeExp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gdpPercap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdpPercap]</local-name>
+            <parent-name>[data.csv]</parent-name>
+            <remote-alias>gdpPercap</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Continent' datatype='string' name='[continent]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Gdp Percap' datatype='real' name='[gdpPercap]' role='measure' type='quantitative' />
+      <column caption='Life Exp' datatype='real' name='[lifeExp]' role='measure' type='quantitative' />
+      <column caption='Pop' datatype='real' name='[pop]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.417166' measure-ordering='alphabetic' measure-percentage='0.582834' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Heatmap for pivot table of data values</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data' name='federated.0djn0oq11rdgb517lbosz1jiiyfu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0djn0oq11rdgb517lbosz1jiiyfu'>
+            <column caption='Continent' datatype='string' name='[continent]' role='dimension' type='nominal' />
+            <column caption='Life Exp' datatype='real' name='[lifeExp]' role='measure' type='quantitative' />
+            <column-instance column='[continent]' derivation='None' name='[none:continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[year]' derivation='None' name='[none:year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lifeExp]' derivation='Sum' name='[sum:lifeExp:qk]' pivot='key' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' value='#00000000' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' value='true' />
+            <format attr='break-on-special' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' value='true' />
+            <format attr='omit-on-special' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' value='true' />
+            <format attr='break-on-special' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' value='true' />
+            <format attr='band-size' scope='cols' value='0' />
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='5' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='shape' value=':filled/square' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-scope' value='cell' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0djn0oq11rdgb517lbosz1jiiyfu].[none:continent:nk]</rows>
+        <cols>[federated.0djn0oq11rdgb517lbosz1jiiyfu].[none:year:qk]</cols>
+      </table>
+      <simple-id uuid='{AA012D23-EA50-4891-8856-4A5B86555A76}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0djn0oq11rdgb517lbosz1jiiyfu].[none:continent:nk]</field>
+            <field>[federated.0djn0oq11rdgb517lbosz1jiiyfu].[none:country:nk]</field>
+            <field>[federated.0djn0oq11rdgb517lbosz1jiiyfu].[none:year:qk]</field>
+            <field>[federated.0djn0oq11rdgb517lbosz1jiiyfu].[sum:lifeExp:qk]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{C90DECF6-CBBF-4662-8D05-E7FD75D9975A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='179' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
